@@ -1,6 +1,8 @@
 # ARVO-Ophai-Landmarking
 
-This repository contains the code and resources for the ARVO abstract from OPHAI Lab (supervised by Dr. Mohammad Eslami, Dr. Saber Kazeminasab, and Dr. Tobias Elze). Instructions for reproducing results and using this repository are below. All files for training, evaluating, and plotting are located in the parent directory. The code for all models we used are in `/models`. The code for data loading, preprocessing, and metrics are found in `/utils`
+This study aims to create a comprehensive benchmark for the evaluation of deep learning methods for the localization of the fovea and disc in fundus images under various perturbations. Such a benchmark is essential for the development of new landmark localization models that can work in different real imaging conditions including brightness, contrast, lens effects, etc.
+
+This repository contains the code and resources for the ARVO abstract for the project described above, from OPHAI Lab (supervised by Dr. Mohammad Eslami, Dr. Saber Kazeminasab, and Dr. Tobias Elze). Instructions for reproducing results and using this repository are below. All files for training, evaluating, and plotting are located in the parent directory. The code for all models we used are in `/models`. The code for data loading, preprocessing, and metrics are found in `/utils`
 
 # Setup
 You can use the file `pip install -r requirement.txt` which was tested using Python 3.9.0.
