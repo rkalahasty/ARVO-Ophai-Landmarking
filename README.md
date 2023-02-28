@@ -10,3 +10,35 @@ Once you have downloaded the file, run the following command.
 ```
 conda env create --name FundusLandmarking --file=environments.yml
 ```
+
+# Train a model
+
+The `\models` directory has two models in it, the HBA UNET (https://arxiv.org/abs/2107.04721) and UNET (https://arxiv.org/abs/1505.04597). If you would like to train your own model, you must add it to the `\models` directory and edit the arguements in the `train.py' file. 
+```
+
+usage: train.py [-h] --model-name
+                     {hbaunet, unet}
+                     --train NAME_CSV_TRAIN 
+                     --dataset_dir DATA_DIR
+                     --save_path PATH_SAVE 
+                     --image_size IMG_SIZE
+                     
+
+Train model.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --model-name {hbaunet, unet}
+                        Name of model to train.
+  --train NAME_CSV_TRAIN
+                        Name of the CSV file with training dataset
+                        information.
+  --dataset_dir DATA_DIR   Path to the folder with the CSV files and image
+                        subfolders.
+  --save_path PATH_SAVE
+                        Path to the folder where model will be saved.
+  --img-size IMG_SIZE   Size to which the images should be reshaped (one
+                        number, i.e. 256 or 512).
+  
+  ```
+
