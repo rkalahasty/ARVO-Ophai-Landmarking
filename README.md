@@ -6,6 +6,11 @@ This repository contains the code and resources for the ARVO abstract for the pr
 
 ![My Image](Perturbation.png)
 
+<img
+  src="Perturbation.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 # Setup
 You can use the file `pip install -r requirement.txt` which was tested using Python 3.9.0.
 
