@@ -42,3 +42,36 @@ optional arguments:
   
   ```
 
+# Test a model
+
+Use the 'test.py' file to test the performance of a trained model on the chosen testing dataset.  
+```
+
+usage: test.py [-h] --model-name
+                     {hbaunet, unet}
+                     --train NAME_CSV_TRAIN 
+                     --dataset_dir DATA_DIR
+                     --path_trained_model MODEL_PATH
+                     --save_path PATH_SAVE 
+                     --image_size IMG_SIZE
+                     
+
+Test model.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --model-name {hbaunet, unet}
+                        Name of model to train.
+  --test NAME_CSV_TEST
+                        Name of the CSV file with training dataset
+                        information.
+  --dataset_dir DATA_DIR   Path to the folder with the CSV files and image
+                        subfolders.
+  --path_trained_model MODEL_PATH   Path to the .h5 file of the trained model. 
+  --save_path PATH_SAVE
+                        Path to the folder where model will be saved.
+  --img-size IMG_SIZE   Size to which the images should be reshaped (one
+                        number, i.e. 256 or 512).
+  
+  ```
+
